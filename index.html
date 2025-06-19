@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dakota Research</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dakota Research</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                   Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #f9f9f9;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: 1px solid #000;
+      border-radius: 6px;
+      background: transparent;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #000;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="logo"><strong>Dakota Research</strong></div>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <header>
-        <h1>Dakota Research</h1>
-        <p>an independent ideas company’s</p>
-    </header>
-    <main>
-        <h2>Welcome</h2>
-        <p>We are committed to advancing knowledge through rigorous research and innovative thinking. Our team is passionate about exploring new ideas and transforming them into real-world solutions.</p>
-    </main>
-    <footer>
-        &copy; 2024 Dakota Research
-    </footer>
+  </header>
+
+  <main>
+    <h1>Research for a changing world.</h1>
+    <p>At Dakota Research, we provide innovative insights to tackle global challenges and drive progress.</p>
+    <button class="btn">Learn more</button>
+  </main>
 </body>
 </html>
