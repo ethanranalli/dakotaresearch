@@ -25,9 +25,9 @@ body {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: rgba(0, 0, 0, 0.15);
     padding: 16px;
+    border-radius: 8px;
 }
 
 nav a {
@@ -135,12 +135,9 @@ footer {
 
 /* Parallax effect */
 .parallax {
-    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
+    background-image: none;
+    background-color: #fff;
+    color: #1d1d1f;
     text-align: center;
 }
 
@@ -160,5 +157,5 @@ main.parallax {
 }
 
 .parallax a {
-    color: #fff;
+    color: #0071e3;
 }
