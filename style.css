@@ -22,23 +22,54 @@ body {
     line-height: 1.6;
 }
 
+header.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e5e5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 1000;
+}
+
 nav {
     display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.15);
-    padding: 16px;
-    border-radius: 8px;
+    gap: 24px;
 }
 
 nav a {
     color: #0071e3;
-    margin: 0 20px;
     text-decoration: none;
     font-weight: 500;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.2s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.2s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #005bb5;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 header {
@@ -101,11 +132,10 @@ main.parallax {
 
 @media (max-width: 600px) {
     nav {
-        flex-direction: column;
-        align-items: center;
+        gap: 16px;
     }
-    nav a {
-        margin: 10px 0;
+    header.site-header {
+        padding: 10px 16px;
     }
     header {
         padding: 40px 20px;
