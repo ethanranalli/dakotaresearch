@@ -117,3 +117,33 @@ footer {
     50% { transform: translate(15vw, 25vh) scale(1.1); }
     100% { transform: translate(0, 0) scale(1); }
 }
+
+/* Parallax effect */
+.parallax {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+header.parallax,
+main.parallax,
+section.parallax {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+main.parallax {
+    max-width: none;
+    margin: 0;
+}
+
+.parallax a {
+    color: #fff;
+}
